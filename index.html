@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ANI ANGGRAINI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>ANI ANGGRAINI</h1>
+    <nav>
+      <button onclick="showSection('home')">HOME</button>
+      <button onclick="showSection('about')">ABOUT</button>
+      <button onclick="showSection('contact')">CONTACT</button>
+    </nav>  
+  </header>
+
+  <!-- HOME Section -->
+<section id="home" class="active">
+  <main>
+    <div class="container">
+      <aside class="image-box">
+        <img src="ani.jpeg" alt="Ani Anggraini">
+      </aside>
+      <article class="text-box">
+        <p>Hello, I'm Ani<br>
+          an informatics student<br>
+          at Ahmad Dahlan University.
+        </p>
+      </article>
+    </div>
+  </main>
+  <div id="welcome-notification" class="notif"></div>
+</section>
+
+
+  <!-- ABOUT Section -->
+ <section id="about">
+  <div class="about-section">
+    <aside class="about-image">
+      <img src="ss.jpg" alt="Ani Photo">
+    </aside>
+    <article class="about-text">
+      <h2>Hey I'm Ani</h2>
+      <h4>Mahasiswa Informatika di Universitas Ahmad Dahlan</h4>
+       <p>
+      saat ini sedang menempuh semester kedua. 
+      Meskipun masih dalam tahap awal perkuliahan, saya memiliki minat yang besar terhadap cara kerja aplikasi serta dunia desain grafis.
+       Ketertarikan ini mendorong saya untuk terus belajar dan memperdalam pemahaman di bidang teknologi.
+      Saya percaya bahwa dengan menjalani pendidikan di Informatika, 
+      saya dapat mengembangkan kemampuan teknis dan kreatif yang diperlukan untuk menjadi seorang software developer yang andal. 
+      Harapan saya, ilmu dan pengalaman yang saya peroleh selama kuliah dapat menjadi bekal untuk berkontribusi dalam menciptakan
+       solusi digital yang bermanfaat bagi masyarakat.</p>
+
+    <p>
+      Selama menjalani perkuliahan, saya telah aktif dalam beberapa kegiatan organisasi dan kepanitiaan. 
+      Saya pernah mengikuti program magang di Himpunan Mahasiswa Informatika, khususnya di divisi Jaringan Lembaga dan Sosial,
+      yang memperluas wawasan saya dalam kerja tim dan komunikasi organisasi.Selain itu, saya dipercaya sebagai Koordinator Acara dalam kegiatan Kongres KBM Informatika, sebuah forum penting dalam pengambilan keputusan mahasiswa.             
+      Dan Saya juga terlibat sebagai Staf Acara dalam perayaan Informatics Anniversary Celebration, 
+      yang memberi saya pengalaman dalam merancang dan menjalankan event berskala jurusan.
+      Melalui pengalaman-pengalaman ini, saya belajar tentang manajemen acara, kerja sama tim, 
+      dan tanggung jawab dalam menjalankan peran secara maksimal.
+    </p>
+    </article>
+  </div>
+</section>
+
+  <!-- CONTACT Section with Form -->
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Hubungi Saya</h2>
+      <p>Silakan terhubung melalui form atau media sosial di bawah ini.</p>
+      
+      <form id="contactForm">
+        <input type="text" name="nama" id="nama" placeholder="Nama" />
+        <span id="errorNama" class="error"></span>
+
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <span id="errorEmail" class="error"></span>
+
+        <textarea name="pesan" id="pesan" placeholder="Pesan" rows="4"></textarea>
+        <span id="errorPesan" class="error"></span>
+
+        <button type="submit">Kirim</button>
+      </form>
+
+      <!-- Tambahan untuk respons pengiriman -->
+      <div id="formResponse"></div>
+
+      <div class="social-bubbles">
+        <a href="mailto:anianggrainiprasetyo@gmail.com" class="bubble" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/AniAnggrainiPrasetyo" class="bubble" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/aninggraini_/" class="bubble" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="simple-footer">
+    <span>COPYRIGHT BY ANI 2025</span>
+  </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
